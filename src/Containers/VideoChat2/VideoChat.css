@@ -1,0 +1,41 @@
+.OT_subscriber {
+  float: left;
+  margin-left: 1em;
+}
+
+.OT_publisher {
+  float: left;
+}
+
+.error {
+  color: red;
+}
+
+.onlineTeachersContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.onlineTeachersContainer li,
+p {
+  color: #f18909
+}
+
+.videoContainer button {
+  margin: 2em .5em 2em .5em;
+  color: #ffb800;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.btn {
+  font-family: Helvetica, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}

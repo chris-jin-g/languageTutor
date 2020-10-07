@@ -1,0 +1,44 @@
+.ModalForm {
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+ /* padding: 2em; */
+ margin: 2em 0em 2em 0em;
+}
+
+.ModalForm input {
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.05);
+ padding: .65em;
+}
+
+.ModalForm label {
+ font-size: 10px;
+}
+
+.modal p {
+ max-width: 75%;
+}
+
+.signup-modal>div>p {
+ margin: auto;
+ max-width: 75%;
+}
+
+.signupButton {
+ background-color: #f18909;
+ width: 75%;
+ margin: auto;
+ border-radius: 8px;
+}
+
+.formOptionRow {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 1em 0em 2em 0em;
+}
+
+.formOptionRow input {
+ max-width: 20%;
+}

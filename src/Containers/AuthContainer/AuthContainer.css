@@ -1,0 +1,6 @@
+.modalContainer {
+ background-image: url('../../Assets/Images/hero.jpg');
+ width: 100vw;
+ height: 100vw;
+ /* background: pink */
+}

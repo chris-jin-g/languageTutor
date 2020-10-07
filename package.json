@@ -1,0 +1,39 @@
+{
+  "name": "language-tutor",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "firebase": "^4.12.1",
+    "freeice": "^2.2.0",
+    "history": "^4.7.2",
+    "moment": "^2.22.1",
+    "moment-timezone": "^0.5.15",
+    "opentok-react": "^0.7.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "react-simplewebrtc": "0.0.18",
+    "redux": "^3.7.2",
+    "redux-persist": "^5.9.1",
+    "simplewebrtc": "^3.0.1",
+    "socket.io": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --coverage --verbose --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/Components/Entry.js --collectCoverageFrom=!src/registerServiceWorker.js --collectCoverageFrom=!src/index.js",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-test-renderer": "^16.3.0",
+    "sinon": "^4.4.10"
+  }
+}

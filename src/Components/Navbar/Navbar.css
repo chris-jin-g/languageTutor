@@ -1,0 +1,246 @@
+a.btn {
+  color: white;
+}
+
+nav {
+  /*background: #402318;*/
+  /*background: #9f918b;*/
+  background: #664e46;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4em;
+  width: 100vw;
+  z-index: 10;
+}
+
+nav .btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  display: block;
+  padding: 10px;
+}
+
+.main-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 0 20px;
+}
+
+.optionsNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.optionsNav li {
+  width: 100%;
+}
+
+.optionsNav .btn {
+}
+
+.main-nav h1 {
+  font-family: 'Poppins-Black', sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.logged-in-main-nav h1 {
+  font-family: 'Poppins-Black', sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+/*.main-nav .links {
+  display: none;
+}
+
+.links-is-open {
+  background-color: #A65A18;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100vw;
+}*/
+
+
+.main-nav .links {
+  background-color: #A65A18;
+  position: absolute;
+  top: -200px;
+  left: 0;
+  width: 100vw;
+  transition: all 0.3s linear;
+}
+
+.links-is-open {
+  background-color: #A65A18;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100vw;
+  transition: all 0.3s linear;
+}
+
+
+.auth-dashboard {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-dashboard img {
+  border-radius: 100%;
+  border: .1em solid white;
+}
+
+.auth-dashboard .btn:hover {
+  color: #F18909;
+}
+
+.profile-image {
+  position: relative;
+}
+
+.profile-image img {
+  max-width: 3em;
+  position: absolute;
+  left: 80px;
+  top: -2px;
+}
+
+
+.hide-mobile {
+  display: none;
+}
+/* =========================
+// HAMBURGER MENU
+// ====================== */
+
+.hamburger {
+  padding: 10px 0 10px 10px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 50px;
+  height: 2px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 13px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(15px) rotate(44deg);
+  -ms-transform: translateY(15px) rotate(44deg);
+  -o-transform: translateY(15px) rotate(44deg);
+  transform: translateY(15px) rotate(44deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-15px) rotate(-44deg);
+  -ms-transform: translateY(-15px) rotate(-44deg);
+  -o-transform: translateY(-15px) rotate(-44deg);
+  transform: translateY(-15px) rotate(-44deg);
+}
+
+
+/*DESKTOP SIZE*/
+@media only screen and (min-width: 600px) {
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: flex;
+  }
+
+  .main-nav {
+    padding: 0 20px;
+  }
+
+  .main-nav .links {
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    width: 100%;
+  }
+
+  nav .btn {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .auth-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .auth-nav img {
+    max-width: 3em;
+  }
+
+  .auth-nav .btn {
+    color: white;
+    cursor: pointer;
+  }
+
+  .mobile-container {
+    margin: 0;
+    width: 50vw;
+  }
+
+
+}
+
+/*FOR SUPER SMALL SCREENS*/
+@media only screen and (max-width: 360px) {
+  .main-nav {
+    width: 100%;
+    display: inline;
+  }
+
+  .mobile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    transform: scale(0.7);
+  }
+  .main-nav h1,
+  .main-nav .hamburger {
+    margin: 0 35px
+  }
+
+  .profile-image img {
+    left: 60px;
+  }
+}

@@ -1,0 +1,281 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url("../../Assets/Images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0px 10px;
+}
+
+.hero h1 {
+  text-align: left;
+  max-width: 70%;
+  margin-right: -7em;
+  font-weight: 900;
+}
+
+.signup-modal {
+  background-color: white;
+  border-radius: 0.3em;
+  padding: 1em 2em 1em 2em;
+  max-width: 30%;
+}
+
+.firstSectionContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/* ====================
+// INFORMATION
+==================== */
+
+.info {
+  background: linear-gradient(#402318, #f18909);
+  padding-bottom: 5em;
+}
+
+.platform,
+.online {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2em;
+  /*text-align: left;*/
+}
+
+.platform {
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+
+ .online-courses {
+  /*margin-right: 70px;*/
+}
+
+.live-mentorships,
+.online-courses {
+  /*margin-left: 70px;*/
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: center;
+}
+
+.info h2,
+.platform h2,
+.our-mentors h2 {
+  font-size: 2em;
+}
+
+.info h3,
+.our-mentors h2 {
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.info h4 {
+  color: #f18909;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 2em;
+  margin-left: -1em;
+}
+
+.online img,
+.platform img {
+  max-width: 30em;
+}
+
+.platform img {
+  transform: rotateY(1.5deg);
+
+}
+.online img {
+  transform: rotateY(-1.5deg);
+}
+
+.perspective-container {
+  -webkit-perspective: 100px;
+  -moz-perspective: 100px;
+  perspective: 100px;
+}
+
+/* .online img {
+  max-width: 25em;
+  max-height: 20em;
+  -ms-transform: skewX(20deg);
+  -webkit-transform: skewX(20deg);
+  transform: skewX(20deg);
+} */
+
+.online li,
+.platform li {
+  font-family: "Poppins-Thin", sans-serif;
+  font-size: 1em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.online-courses,
+.live-mentorships {
+  margin-bottom: 30px;
+}
+
+.online li .icon-video,
+.online li .icon-statistics,
+.online li .icon-rewards,
+.platform li .icon-mentorship,
+.platform li .icon-online-chat,
+.platform li .icon-language {
+  font-size: 1.5em;
+  color: #a65a18;
+  margin-right: 10px;
+}
+
+.our-mentors {
+  padding: 12em 0em 2em 0em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.our-mentors h5 {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 1.3em;
+  color: #ffb800;
+  text-transform: uppercase;
+  padding: 1em 0em 1em 0em;
+}
+
+.our-mentors p {
+  color: #f2f2f2;
+}
+
+.mentorContainer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+
+.mentorContainer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+
+.mentorContainer1 img,
+.mentorContainer2 img {
+  border: 3px solid #f2f2f2;
+  border-radius: 100%;
+  width: 120px;
+}
+
+.mentorContainer1,
+.mentorContainer2 {
+  padding: 20px 0px;
+}
+
+.mentorContainer1 div,
+.mentorContainer2 div {
+  padding: 0px 20px;
+}
+
+/*
+@media only screen and (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url('../../Assets/Images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0px 10px;
+  }
+  .firstSectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+  }
+  .hero h1 {
+    text-align: left;
+    max-width: 100%;
+  }
+  .hero .signup-modal {
+    border-radius: .3em;
+    padding: 1em;
+    max-width: 100%;
+  }
+} */
+
+@media only screen and (max-width: 980px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url("../../Assets/Images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0px 10px;
+  }
+  .firstSectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .hero h1 {
+    text-align: left;
+    max-width: 100%;
+  }
+  .signup-modal {
+    border-radius: 0.3em;
+    padding: 1em;
+    max-width: 80%;
+  }
+  .platform,
+  .online {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2em;
+  }
+  .platform img,
+  .online img {
+    margin: auto;
+  }
+  .info h3 {
+    font-size: 2em;
+  }
+  .mentorContainer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mentorContainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mentorContainer1 div,
+  .mentorContainer2 div {
+    margin-bottom: 20px;
+  }
+}

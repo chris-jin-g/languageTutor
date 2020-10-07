@@ -1,0 +1,103 @@
+footer {
+  background-color: #402318;
+}
+
+footer h1 {
+  font-size: 2.1em;
+}
+
+.foot-top {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 2em;
+  margin: auto;
+}
+
+.foot-top h1 {
+  font-weight: 900
+}
+
+.foot-courses,
+.foot-info {
+  margin-top: 20px;
+}
+
+.foot-courses ul li,
+.foot-info ul li {
+  padding: 4px;
+}
+
+.foot-courses,
+.foot-info a {
+  color: #f18909
+}
+
+.foot-bottom {
+  padding: 2em;
+  margin: 0 auto;
+}
+
+.legal-stuff,
+.foot-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-social li {
+  color: white;
+}
+
+.foot-bottom li{
+  display: inline;
+}
+
+.copyright {
+  margin: 20px 0;
+}
+
+
+@media only screen and (min-width: 720px) {
+
+  .foot-top {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .foot-courses,
+  .foot-info {
+    margin-top: 0;
+  }
+
+/********* fix ul li being covered bug **********/
+  .foot-courses ul,
+  .foot-info ul {
+    margin-bottom: 16px;
+  }
+
+  .foot-bottom {
+    max-width: 900px;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .foot-bottom li a,
+  .foot-social li {
+    /*margin-left: 50px;*/
+    display: inline-block;
+    padding: 8px;
+  }
+
+  .foot-bottom .copyright {
+    margin: 0;
+  }
+}
+
+/*FOR SUPER SMALL SCREENS*/
+@media only screen and (max-width: 400px) {
+  .foot-top h1 {
+    font-size: 1.8em;
+  }
+}

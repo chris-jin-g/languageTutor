@@ -1,0 +1,33 @@
+.modal-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  /*display: none;*/
+  /*display none being set and changed inside header Component*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modal-main {
+  /*position: absolute;*/
+  background: #f1f1f1;
+  padding: 20px;
+  /*max-width: 400px;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-main button {
+  margin-top: 20px;
+  /*text-align: center;*/
+}
+
+.modal-btn-group {
+  display: flex;
+  justify-content: space-around;
+}

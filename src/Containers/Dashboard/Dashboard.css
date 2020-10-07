@@ -1,0 +1,104 @@
+.completeContainer {
+  display: flex;
+}
+
+
+.sidebarContainer {
+  max-width: 33%;
+  height: 90vh;
+  border: 1px solid black;
+  /*background: #402318;
+  background: yellow;
+  background: #664e46;*/
+  background: #eee;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333;
+}
+
+.tabButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.tabButtonContainer button {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.25em;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: #eee;
+  outline: none;
+}
+
+.tabButtonContainer button:nth-child(2){
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+
+.tabListContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+ol,
+ul {
+  text-align: left;
+  overflow: scroll;
+  /* LIST STYLE TYPE NOT WORKING FOR CSS*/
+  /*list-style-type: decimal-leading-zero;*/
+
+}
+
+
+.tabListContainer ol li {
+  height: 5em;
+  margin-bottom: .4em;
+  background: #ccc;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.strong {
+  font-weight: bold;
+}
+.selectedContent {
+  border: 1px solid black;
+  width: 100%;
+  background: #402318;
+}
+
+.selectedButton {
+  background-color: rgba(0, 0, 0, .2);
+  cursor: pointer;
+  background: #ccc !important;
+}
+
+
+.needHelpContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  /*background: #664e46;*/
+
+}
+
+.needHelpContainer img {
+  max-width: 7em;
+  border-radius: 100%;
+  /*padding-bottom: 2em;*/
+}
+
+.needHelpContainer button {
+  background-color: #f18909;
+  width: 75%;
+  align-content: center;
+  cursor: pointer;
+}
